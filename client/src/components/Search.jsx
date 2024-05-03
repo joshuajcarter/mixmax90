@@ -22,6 +22,7 @@ const Search = ({ search, setSearch, currentTracks, setCurrentTracks, getCurrent
   
 
   const getToken = async () => {
+    // console.log('in getToken')
     const url = "https://accounts.spotify.com/api/token";
     const client_id = import.meta.env.VITE_APP_SPOTIFY_CLIENT_ID;
     const client_secret = import.meta.env.VITE_APP_SPOTIFY_CLIENT_SECRET;
